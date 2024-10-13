@@ -31,7 +31,7 @@ function LinkEmbed() {
     <section>
           <div className="App container mx-auto p-4 bg-black2 text-black5 min-h-screen">
       <h1 className="text-7xl font-bold text-center mb-8 text-black5">
-          Link Embed
+          Link <span className="text-blue-700 underline">Embed</span> 
       </h1>
 
       {/* Link input */}
