@@ -28,8 +28,9 @@ function LinkEmbed() {
   };
 
   return (
-    <div className="App container mx-auto p-4 text-black5 min-h-screen">
-      <h1 className="text-4xl font-bold text-center mb-8 text-black5">
+    <section>
+          <div className="App container mx-auto p-4 bg-black2 text-black5 min-h-screen">
+      <h1 className="text-7xl font-bold text-center mb-8 text-black5">
           Link Embed
       </h1>
 
@@ -56,12 +57,13 @@ function LinkEmbed() {
       {/* Generate button */}
       <div className="text-center">
       <div className="button-container">
-        <button
-          onClick={handleGenerate}
-          className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black1 transition-all"
-        >
-          Generate
-        </button>
+      <button
+        onClick={handleGenerate}
+        className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black4 hover:text-black1 transition-all transform active:scale-95  focus:outline-none"
+      >
+        Generate
+      </button>
+
         </div>
 
       </div>
@@ -108,7 +110,19 @@ function LinkEmbed() {
           </div>
         </div>
       )}
+      
+
     </div>
+    <footer className="w-full bg-black1 botom-0 text-gray-300 py-6">
+    <div className="container mx-auto text-center">
+      <p className="text-sm md:text-base">
+        © 2024 <span className="font-bold text-white">Link Embed Tool</span>. All rights reserved.
+      </p>
+  
+    </div>
+  </footer>
+    </section>
+
   );
 }
 
